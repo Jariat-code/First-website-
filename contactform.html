@@ -1,0 +1,131 @@
+<!Doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=0.7">
+<title>contact form</title>
+<style>
+body{
+background-color:#41d0ff;
+text-align:center;
+
+
+}
+form{
+background-color:#3b29ff;
+box-shadow:0 0 8px #000;
+border:5px solid #41d0ff;
+padding:20px;
+width:90%;
+height :auto;
+margin:auto;
+}
+input{
+width:340px;
+padding:11px;
+border:none;
+border-bottom:2px solid #41d0ff;
+background-color:transparent;
+Margin:auto;
+color:white;
+border-radius:0;
+font-size:20px;
+}
+textarea{
+width:350px;
+padding:13px;
+border:none;
+border-bottom:2px solid #41d0ff;
+background-color:transparent;
+color:white;
+border-radius:0; 
+font-size:20px;
+
+}
+
+::placeholder{
+color:#41d0ff;
+font-size:15px;
+}
+label{
+display:block;
+font-weight:bold;
+color:white;
+font-size:15px;
+}
+button{
+color:white;
+border-bottom:1px solid white;
+width:160px;
+padding:15px;
+background-color:#3b29ff;
+font-weight:bold;
+transition:all 0.3s ease-in-out;
+
+}
+h1{
+color:White;
+text-align:center;
+font-weight:bold;
+}
+[for="fname"]{
+margin-right:268px;
+}
+
+[for="lname"]{
+margin-right:271px;
+}
+
+[for="Ename"]{
+margin-right:305px;
+}
+[for="Cname"]{
+margin-right:273px;
+}
+input:focus,textarea:focus{
+color:black;
+border:2px solid #41d0ff;
+}
+button:active{
+background-color:#00ffff;
+color:black;
+}
+textarea::placeholder{
+text-align:right;
+padding-top:100px;
+padding-right:230px;
+}
+</style>
+</head>
+<body>
+<form action= “contact_form.php” method =“post”>
+<br>
+<h1>CONTACT US</h1>
+<br><br><br>
+<div >
+<label for="fname"> FIRSTNAME:</label>
+<input type="text" Id="fname" placeholder="enter..." name="fname" required>
+</div>
+<br>
+<div>
+<label for="lname"> LASTNAME:</label>
+<input type="text" Id="lname" placeholder="enter..." name="lname" required>
+</div>
+<br>
+<div>
+<label for="Ename"> EMAIL:</label>
+<input type="email"  Id="Ename"placeholder="email@example"name="Ename" required>
+</div>
+<br>
+<div>
+<label for="Cname"> COMMENTS:</label>
+<textarea  placeholder="write a comment" Id="Cname" name="Comments_entered" required rows="6" ></textarea>
+</div>
+<br>
+<p>
+<button type="submit"> SUBMIT</button>
+</p>
+
+</form>
+</body>
+</html>
