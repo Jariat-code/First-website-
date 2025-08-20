@@ -1,0 +1,199 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=0.7">
+<title>Page Title</title>
+<style>
+  *{
+  box-sizing: border-box;
+  }
+form{
+border:2px solid #5556;
+padding:30px;
+text-align:center;
+height:500px;
+max-width:900px;
+width:100%;
+flex:0 0 500px;
+box-shadow: 0 0 6px black;
+background-color:rgb(237, 239, 214);
+}
+
+body{
+background-color:white;
+}
+input{
+width:100%;
+color:black;
+box-shadow: 0 0 6px black;
+margin-bottom:3px;
+padding:20px;
+border-style:outset;
+border:2px solid white;
+
+}
+input::placeholder {
+  color: black;
+  font-style: italic;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+label{
+padding:5px;
+color:black;
+font-size:20px;
+text-shadow:2px 2px 3px rgb(237, 239, 214) ,2px 2px 3px black;
+display:flex;
+}
+.ton{
+
+padding:20px;
+color:white;
+flex:1;
+border:2px solid white;
+text-align:center;
+font-weight:bold;
+margin:auto;
+font-size:20px;
+background:linear-gradient(to left, rgb(0, 0, 149),rgb(38, 43, 63,0.9));
+
+}
+.but{
+
+padding:20px;
+color:white;
+flex:1;
+border:2px solid white;
+text-align:center;
+font-weight:bold;
+margin:auto;
+font-size:20px;
+background:linear-gradient(to left , rgb(5, 120, 79),rgb(11, 131, 77,0.9));
+}
+.but a{
+color:black;
+text-align:center;
+}
+.flex{
+display:flex;
+gap:10px;
+margin:20px 0;
+}
+
+
+
+.span{
+text-align:center;
+color:black;
+font-weight:bold;
+font-size:30px;
+padding:15px;
+margin-bottom:15px;
+font-family: 'Times New Roman', serif; 
+}
+.imp{
+padding:5px;
+width:100%;
+margin-bottom: 20px;
+
+}
+
+.about {
+padding:10px;
+text-align:center;
+height:500px;
+width:50%;
+flex:0 0 400px;
+background-image:linear-gradient(to left,rgb(38, 43, 63,0.9),rgb(0, 0, 149,0.8));
+display:flex;
+min-height:70%;
+align-items:center;
+justify-content:center;
+flex-direction:column;
+box-shadow: 0 0 6px black;
+}
+.all{
+display:flex;
+  align-items:stretch;
+  width:100%;
+  padding:0;
+  height:auto;
+  margin:0; 
+}
+
+.about,form{
+margin:0;
+}
+span{
+color:purple;
+}
+h1,h3,ul,p{
+color:rgb(237, 239, 214);
+}
+.forgot {
+display:block;
+  margin-top: 10px;
+  font-size: 16px;
+  color: black;
+  text-decoration: underline;
+  text-align:right;
+}
+a{
+color:white;
+font-size:20px;
+font-weight:bold;
+text-align:right;
+}
+
+</style>
+</head>
+<body>
+<div class="all">
+
+<div class="about">
+<h1> WELCOME BACK</h1>
+<h3> YOUR JOURNEY CONTINUES HERE</h3>
+<p>Log in to continue exploring our platform.Access your personalized dashboard, manage your tasks, and stay updated with the latest features.</p> <ul>
+    <li>✔ Secure and reliable</li>
+    <li>✔ Track your progress</li>
+    <li>✔ Stay connected anytime</li>
+</ul>
+
+<a href="contactform.html">for more information,Contact us ⬇️</a>
+</div>
+
+
+<form action="sign-up.php" method="post">
+<span class="span">LOG IN FORM</span>
+
+<div class="imp">
+<label for="email"><small>EMAIL:</small></label>
+
+<input type="text"placeholder="enter.."  id="email" required name="email">
+</div>
+
+<div class="imp">
+<label for=" password"><small>PASSWORD:</small></label>
+<input type="password" placeholder="enter your password" id="password" required name="password">
+</div>
+
+
+<div class="flex">
+<button class="ton" type="submit"> LOG IN </button>
+<button class="but" type="button"><a href="Signup.html">SIGN UP</button>
+</div>
+
+<hr>
+<div>
+<a href="forgot.html" class="forgot">Forgotten password?</a></div>
+<br>
+</form>
+</div>
+</body>
+</html>
+
+
+
